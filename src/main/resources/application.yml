@@ -20,6 +20,8 @@ mybatis-plus:
       #id-type: uuid
       logic-not-delete-value: 0
       logic-delete-value: 1
+#  驼峰映射
   configuration:
     map-underscore-to-camel-case: true
+  #config-location: classpath*:mybatis/mybatis‐config.xml
 

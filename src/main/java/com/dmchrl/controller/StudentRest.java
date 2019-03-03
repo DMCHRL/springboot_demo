@@ -1,5 +1,7 @@
 package com.dmchrl.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dmchrl.domain.Score;
 import com.dmchrl.domain.Student;
 import com.dmchrl.mapper.ScoreMapper;
@@ -44,6 +46,12 @@ public class StudentRest {
   public Score insertScore( Score score){
     scoreMapper.insert(score);
     return score;
+  }
+
+  @GetMapping("/score/pageList")
+  public List<Score> pageList(){
+    IPage<Score> page1= scoreMapper.selectPage(new Page<>(1,1),null);
+    return page1.getRecords();
   }
 
 }

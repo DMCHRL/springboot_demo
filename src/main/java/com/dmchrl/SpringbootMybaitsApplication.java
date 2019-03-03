@@ -10,6 +10,8 @@ public class SpringbootMybaitsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootMybaitsApplication.class, args);
+
+
 	}
 
 }
