@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.*;
 /**
  * Created by dmchrl on 2019/3/3.
  */
-@Mapper
+//@Mapper
 public interface StudentMapper {
 
   @Select("select * from t_student where id =#{id}")
